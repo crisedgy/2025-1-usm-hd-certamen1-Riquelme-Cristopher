@@ -1,0 +1,97 @@
+/* Custom styles for Burnout Landing Page */
+
+/* General styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* Navbar styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel styles */
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Section styles */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section h2 {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+section h2:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #6c757d;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Table styles */
+.table {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.table th {
+  width: 30%;
+  vertical-align: middle;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 300px;
+  }
+
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .table th {
+    width: 40%;
+  }
+}
